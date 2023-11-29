@@ -53,5 +53,7 @@ namespace BTL_QuanLiKTX
 		{
 			this.Close();
 		}
+
+		
 	}
 }

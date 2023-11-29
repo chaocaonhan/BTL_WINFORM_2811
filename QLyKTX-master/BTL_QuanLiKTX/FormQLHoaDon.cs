@@ -77,6 +77,7 @@ namespace BTL_QuanLiKTX
 		private void tìmKiếmHóaĐơnToolStripMenuItem_Click_1(object sender, EventArgs e)
 		{
 			loadFunction(new FormTKHoaDon());
+			label1.Text = "Tìm kiếm hóa đơn";
 		}
 
 		public void loadFunction(object Form)

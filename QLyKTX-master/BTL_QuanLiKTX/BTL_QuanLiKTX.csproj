@@ -107,6 +107,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChiTietPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChiTietPhong.Designer.cs">
+      <DependentUpon>ChiTietPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="dbQLSVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -253,6 +259,9 @@
     <Compile Include="TimKiemPhong.Designer.cs">
       <DependentUpon>TimKiemPhong.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChiTietPhong.resx">
+      <DependentUpon>ChiTietPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChiTietPhong.resx">
       <DependentUpon>FormChiTietPhong.cs</DependentUpon>
     </EmbeddedResource>

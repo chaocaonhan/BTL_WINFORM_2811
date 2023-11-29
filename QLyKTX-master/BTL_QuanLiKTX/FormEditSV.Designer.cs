@@ -102,18 +102,18 @@
 			this.guna2GroupBox1.FillColor = System.Drawing.Color.WhiteSmoke;
 			this.guna2GroupBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox1.ForeColor = System.Drawing.Color.White;
-			this.guna2GroupBox1.Location = new System.Drawing.Point(14, 243);
+			this.guna2GroupBox1.Location = new System.Drawing.Point(14, 216);
 			this.guna2GroupBox1.Name = "guna2GroupBox1";
-			this.guna2GroupBox1.Size = new System.Drawing.Size(905, 263);
+			this.guna2GroupBox1.Size = new System.Drawing.Size(905, 253);
 			this.guna2GroupBox1.TabIndex = 11;
 			this.guna2GroupBox1.Text = "Thông Tin Sinh Viên";
 			// 
 			// cmbMaLop
 			// 
 			this.cmbMaLop.FormattingEnabled = true;
-			this.cmbMaLop.Location = new System.Drawing.Point(633, 155);
+			this.cmbMaLop.Location = new System.Drawing.Point(612, 162);
 			this.cmbMaLop.Name = "cmbMaLop";
-			this.cmbMaLop.Size = new System.Drawing.Size(238, 34);
+			this.cmbMaLop.Size = new System.Drawing.Size(264, 34);
 			this.cmbMaLop.TabIndex = 13;
 			// 
 			// cmbMaKhoa
@@ -121,9 +121,9 @@
 			this.cmbMaKhoa.DataSource = this.khoaBindingSource;
 			this.cmbMaKhoa.DisplayMember = "Makhoa";
 			this.cmbMaKhoa.FormattingEnabled = true;
-			this.cmbMaKhoa.Location = new System.Drawing.Point(636, 105);
+			this.cmbMaKhoa.Location = new System.Drawing.Point(615, 112);
 			this.cmbMaKhoa.Name = "cmbMaKhoa";
-			this.cmbMaKhoa.Size = new System.Drawing.Size(235, 34);
+			this.cmbMaKhoa.Size = new System.Drawing.Size(261, 34);
 			this.cmbMaKhoa.TabIndex = 12;
 			this.cmbMaKhoa.SelectedIndexChanged += new System.EventHandler(this.cmbMaKhoa_SelectedIndexChanged);
 			// 
@@ -137,9 +137,9 @@
 			this.cmbMaQue.DataSource = this.queBindingSource;
 			this.cmbMaQue.DisplayMember = "Maque";
 			this.cmbMaQue.FormattingEnabled = true;
-			this.cmbMaQue.Location = new System.Drawing.Point(636, 57);
+			this.cmbMaQue.Location = new System.Drawing.Point(615, 64);
 			this.cmbMaQue.Name = "cmbMaQue";
-			this.cmbMaQue.Size = new System.Drawing.Size(235, 34);
+			this.cmbMaQue.Size = new System.Drawing.Size(261, 34);
 			this.cmbMaQue.TabIndex = 11;
 			// 
 			// queBindingSource
@@ -150,31 +150,31 @@
 			// cmbGioiTinh
 			// 
 			this.cmbGioiTinh.FormattingEnabled = true;
-			this.cmbGioiTinh.Location = new System.Drawing.Point(146, 201);
+			this.cmbGioiTinh.Location = new System.Drawing.Point(196, 207);
 			this.cmbGioiTinh.Name = "cmbGioiTinh";
-			this.cmbGioiTinh.Size = new System.Drawing.Size(264, 34);
+			this.cmbGioiTinh.Size = new System.Drawing.Size(235, 34);
 			this.cmbGioiTinh.TabIndex = 10;
 			// 
 			// dtpNgaySinh
 			// 
 			this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpNgaySinh.Location = new System.Drawing.Point(146, 153);
+			this.dtpNgaySinh.Location = new System.Drawing.Point(196, 159);
 			this.dtpNgaySinh.Name = "dtpNgaySinh";
-			this.dtpNgaySinh.Size = new System.Drawing.Size(264, 35);
+			this.dtpNgaySinh.Size = new System.Drawing.Size(235, 35);
 			this.dtpNgaySinh.TabIndex = 9;
 			// 
 			// txtTensv
 			// 
-			this.txtTensv.Location = new System.Drawing.Point(146, 105);
+			this.txtTensv.Location = new System.Drawing.Point(196, 111);
 			this.txtTensv.Name = "txtTensv";
-			this.txtTensv.Size = new System.Drawing.Size(264, 35);
+			this.txtTensv.Size = new System.Drawing.Size(235, 35);
 			this.txtTensv.TabIndex = 8;
 			// 
 			// txtMasv
 			// 
-			this.txtMasv.Location = new System.Drawing.Point(146, 57);
+			this.txtMasv.Location = new System.Drawing.Point(196, 63);
 			this.txtMasv.Name = "txtMasv";
-			this.txtMasv.Size = new System.Drawing.Size(264, 35);
+			this.txtMasv.Size = new System.Drawing.Size(235, 35);
 			this.txtMasv.TabIndex = 7;
 			// 
 			// label7
@@ -182,7 +182,7 @@
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label7.ForeColor = System.Drawing.Color.Black;
-			this.label7.Location = new System.Drawing.Point(505, 108);
+			this.label7.Location = new System.Drawing.Point(484, 115);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(117, 26);
 			this.label7.TabIndex = 6;
@@ -193,7 +193,7 @@
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(505, 158);
+			this.label6.Location = new System.Drawing.Point(484, 165);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(100, 26);
 			this.label6.TabIndex = 5;
@@ -204,7 +204,7 @@
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label5.ForeColor = System.Drawing.Color.Black;
-			this.label5.Location = new System.Drawing.Point(505, 60);
+			this.label5.Location = new System.Drawing.Point(484, 67);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(104, 26);
 			this.label5.TabIndex = 4;
@@ -259,10 +259,10 @@
 			this.btnSua.BackColor = System.Drawing.Color.DarkSlateBlue;
 			this.btnSua.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnSua.Location = new System.Drawing.Point(296, 527);
+			this.btnSua.Location = new System.Drawing.Point(210, 483);
 			this.btnSua.Margin = new System.Windows.Forms.Padding(2);
 			this.btnSua.Name = "btnSua";
-			this.btnSua.Size = new System.Drawing.Size(128, 40);
+			this.btnSua.Size = new System.Drawing.Size(206, 54);
 			this.btnSua.TabIndex = 12;
 			this.btnSua.Text = "Sửa thông tin";
 			this.btnSua.UseVisualStyleBackColor = false;
@@ -273,10 +273,10 @@
 			this.btnHuy.BackColor = System.Drawing.Color.DarkSlateBlue;
 			this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnHuy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnHuy.Location = new System.Drawing.Point(523, 527);
+			this.btnHuy.Location = new System.Drawing.Point(493, 483);
 			this.btnHuy.Margin = new System.Windows.Forms.Padding(2);
 			this.btnHuy.Name = "btnHuy";
-			this.btnHuy.Size = new System.Drawing.Size(128, 40);
+			this.btnHuy.Size = new System.Drawing.Size(206, 54);
 			this.btnHuy.TabIndex = 13;
 			this.btnHuy.Text = "Hủy";
 			this.btnHuy.UseVisualStyleBackColor = false;
@@ -376,12 +376,12 @@
 			dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
 			this.dgvDSSinhVien.DefaultCellStyle = dataGridViewCellStyle3;
 			this.dgvDSSinhVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-			this.dgvDSSinhVien.Location = new System.Drawing.Point(12, 13);
+			this.dgvDSSinhVien.Location = new System.Drawing.Point(23, 13);
 			this.dgvDSSinhVien.Margin = new System.Windows.Forms.Padding(4);
 			this.dgvDSSinhVien.Name = "dgvDSSinhVien";
 			this.dgvDSSinhVien.RowHeadersVisible = false;
 			this.dgvDSSinhVien.RowHeadersWidth = 51;
-			this.dgvDSSinhVien.Size = new System.Drawing.Size(905, 210);
+			this.dgvDSSinhVien.Size = new System.Drawing.Size(896, 186);
 			this.dgvDSSinhVien.TabIndex = 2;
 			this.dgvDSSinhVien.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.dgvDSSinhVien.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -410,7 +410,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(930, 585);
+			this.ClientSize = new System.Drawing.Size(967, 569);
 			this.Controls.Add(this.btnHuy);
 			this.Controls.Add(this.btnSua);
 			this.Controls.Add(this.guna2GroupBox1);

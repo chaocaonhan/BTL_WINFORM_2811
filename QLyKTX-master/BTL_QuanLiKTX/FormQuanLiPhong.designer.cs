@@ -50,7 +50,7 @@
 			// 
 			// menuStrip1
 			// 
-			this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
 			this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tấtCảCácPhòngToolStripMenuItem,
@@ -58,28 +58,28 @@
             this.btnThemPhong});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(1288, 46);
+			this.menuStrip1.Size = new System.Drawing.Size(1288, 36);
 			this.menuStrip1.TabIndex = 11;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
 			// tấtCảCácPhòngToolStripMenuItem
 			// 
 			this.tấtCảCácPhòngToolStripMenuItem.Name = "tấtCảCácPhòngToolStripMenuItem";
-			this.tấtCảCácPhòngToolStripMenuItem.Size = new System.Drawing.Size(240, 42);
+			this.tấtCảCácPhòngToolStripMenuItem.Size = new System.Drawing.Size(173, 32);
 			this.tấtCảCácPhòngToolStripMenuItem.Text = "Tất cả các phòng";
 			this.tấtCảCácPhòngToolStripMenuItem.Click += new System.EventHandler(this.tấtCảCácPhòngToolStripMenuItem_Click);
 			// 
 			// tìmKiếmToolStripMenuItem
 			// 
 			this.tìmKiếmToolStripMenuItem.Name = "tìmKiếmToolStripMenuItem";
-			this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(153, 42);
+			this.tìmKiếmToolStripMenuItem.Size = new System.Drawing.Size(110, 32);
 			this.tìmKiếmToolStripMenuItem.Text = "Tìm kiếm ";
 			this.tìmKiếmToolStripMenuItem.Click += new System.EventHandler(this.tìmKiếmToolStripMenuItem_Click);
 			// 
 			// btnThemPhong
 			// 
 			this.btnThemPhong.Name = "btnThemPhong";
-			this.btnThemPhong.Size = new System.Drawing.Size(189, 42);
+			this.btnThemPhong.Size = new System.Drawing.Size(137, 32);
 			this.btnThemPhong.Text = "Thêm phòng";
 			this.btnThemPhong.Click += new System.EventHandler(this.btnThemPhong_Click);
 			// 
@@ -107,7 +107,7 @@
 			this.panel1.BackColor = System.Drawing.Color.Teal;
 			this.panel1.Controls.Add(this.lbTieuDe);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel1.Location = new System.Drawing.Point(0, 46);
+			this.panel1.Location = new System.Drawing.Point(0, 36);
 			this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.panel1.MinimumSize = new System.Drawing.Size(0, 66);
 			this.panel1.Name = "panel1";
@@ -128,9 +128,9 @@
 			// loadFunctionPhong
 			// 
 			this.loadFunctionPhong.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.loadFunctionPhong.Location = new System.Drawing.Point(0, 112);
+			this.loadFunctionPhong.Location = new System.Drawing.Point(0, 102);
 			this.loadFunctionPhong.Name = "loadFunctionPhong";
-			this.loadFunctionPhong.Size = new System.Drawing.Size(1288, 656);
+			this.loadFunctionPhong.Size = new System.Drawing.Size(1288, 666);
 			this.loadFunctionPhong.TabIndex = 29;
 			this.loadFunctionPhong.Paint += new System.Windows.Forms.PaintEventHandler(this.loadFunctionPhong_Paint);
 			// 

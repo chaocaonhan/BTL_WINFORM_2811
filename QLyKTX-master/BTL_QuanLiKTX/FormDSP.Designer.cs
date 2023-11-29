@@ -88,7 +88,7 @@
 			this.dataGridViewDanhSachPhong.RowHeadersVisible = false;
 			this.dataGridViewDanhSachPhong.RowHeadersWidth = 51;
 			this.dataGridViewDanhSachPhong.RowTemplate.Height = 24;
-			this.dataGridViewDanhSachPhong.Size = new System.Drawing.Size(1234, 542);
+			this.dataGridViewDanhSachPhong.Size = new System.Drawing.Size(1217, 542);
 			this.dataGridViewDanhSachPhong.TabIndex = 28;
 			this.dataGridViewDanhSachPhong.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
 			this.dataGridViewDanhSachPhong.ThemeStyle.AlternatingRowsStyle.Font = null;

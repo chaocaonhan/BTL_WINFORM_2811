@@ -30,21 +30,62 @@ namespace BTL_QuanLiKTX
 			this.loadContent.Tag = f;
 			f.Show();
 		}
+		public void setColor(string colorPhong, string colorSV, string colorHD, string colorTB)
+		{
+			// Set the text color of btnQLPhong to yellow or white
+			if (colorPhong.ToLower() == "yellow")
+			{
+				btnQanLiPhong.ForeColor = Color.Yellow;
+			}
+			else if (colorPhong.ToLower() == "white")
+			{
+				btnQanLiPhong.ForeColor = Color.White;
+			}
 
+			if (colorSV.ToLower() == "yellow")
+			{
+				btnQuanLiSV.ForeColor = Color.Yellow;
+			}
+			else if (colorSV.ToLower() == "white")
+			{
+				btnQuanLiSV.ForeColor = Color.White;
+			}
+
+			if (colorHD.ToLower() == "yellow")
+			{
+				btnQuanLiHoaDon.ForeColor = Color.Yellow;
+			}
+			else if (colorHD.ToLower() == "white")
+			{
+				btnQuanLiHoaDon.ForeColor = Color.White;
+			}
+
+			if (colorTB.ToLower() == "yellow")
+			{
+				btnQuanLiThietBi.ForeColor = Color.Yellow;
+			}
+			else if (colorTB.ToLower() == "white")
+			{
+				btnQuanLiThietBi.ForeColor = Color.White;
+			}
+		}
 		private void btnQuanLiSV_Click(object sender, EventArgs e)
 		{
+			setColor("white", "yellow", "white", "white");
 			panel1.Hide();
 			loadFunction(new FormMainQLSV());
 		}
 
 		private void btnQuanLiHoaDon_Click(object sender, EventArgs e)
 		{
+			setColor("white",  "white", "yellow", "white");
 			panel1.Hide();
 			loadFunction(new FormQLHoaDon());
 		}
 
 		private void btnQanLiPhong_Click(object sender, EventArgs e)
 		{
+			setColor("yellow", "white",  "white", "white");
 			panel1.Hide();
 			loadFunction(new FormQuanLiPhong());
 		}
@@ -57,6 +98,7 @@ namespace BTL_QuanLiKTX
 
 		private void btnQuanLiThietBi_Click(object sender, EventArgs e)
 		{
+			setColor("white", "white", "white", "yellow");
 			panel1.Hide();
 			loadFunction(new FormQuanLiThietBi());
 		}

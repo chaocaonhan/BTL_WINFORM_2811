@@ -37,7 +37,7 @@
 			this.sinhViênTrảPhòngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.xuấtExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.panel1 = new System.Windows.Forms.Panel();
-			this.label1 = new System.Windows.Forms.Label();
+			this.lbChucNangHienTai = new System.Windows.Forms.Label();
 			this.loadChucNangSV = new Guna.UI2.WinForms.Guna2Panel();
 			this.loadFunctionSV = new Guna.UI2.WinForms.Guna2Panel();
 			this.menuStrip1.SuspendLayout();
@@ -52,7 +52,7 @@
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-			this.menuStrip1.Size = new System.Drawing.Size(1288, 28);
+			this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
 			this.menuStrip1.TabIndex = 0;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -115,24 +115,24 @@
 			// 
 			this.panel1.AutoSize = true;
 			this.panel1.BackColor = System.Drawing.Color.Teal;
-			this.panel1.Controls.Add(this.label1);
+			this.panel1.Controls.Add(this.lbChucNangHienTai);
 			this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel1.Location = new System.Drawing.Point(0, 28);
+			this.panel1.Location = new System.Drawing.Point(0, 30);
 			this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(1288, 64);
+			this.panel1.Size = new System.Drawing.Size(1288, 61);
 			this.panel1.TabIndex = 10;
 			// 
-			// label1
+			// lbChucNangHienTai
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(501, 18);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(313, 46);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Quản lí sinh viên";
+			this.lbChucNangHienTai.AutoSize = true;
+			this.lbChucNangHienTai.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbChucNangHienTai.ForeColor = System.Drawing.Color.White;
+			this.lbChucNangHienTai.Location = new System.Drawing.Point(409, 15);
+			this.lbChucNangHienTai.Name = "lbChucNangHienTai";
+			this.lbChucNangHienTai.Size = new System.Drawing.Size(313, 46);
+			this.lbChucNangHienTai.TabIndex = 0;
+			this.lbChucNangHienTai.Text = "Quản lí sinh viên";
 			// 
 			// loadChucNangSV
 			// 
@@ -144,9 +144,9 @@
 			// loadFunctionSV
 			// 
 			this.loadFunctionSV.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.loadFunctionSV.Location = new System.Drawing.Point(0, 92);
+			this.loadFunctionSV.Location = new System.Drawing.Point(0, 91);
 			this.loadFunctionSV.Name = "loadFunctionSV";
-			this.loadFunctionSV.Size = new System.Drawing.Size(1288, 658);
+			this.loadFunctionSV.Size = new System.Drawing.Size(1288, 659);
 			this.loadFunctionSV.TabIndex = 11;
 			this.loadFunctionSV.Paint += new System.Windows.Forms.PaintEventHandler(this.loadFunctionSV_Paint);
 			// 
@@ -182,7 +182,7 @@
 		private System.Windows.Forms.ToolStripMenuItem sửaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem xuấtExcelToolStripMenuItem;
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label lbChucNangHienTai;
 		private System.Windows.Forms.ToolStripMenuItem sinhViênĐặtPhòngToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem sinhViênTrảPhòngToolStripMenuItem;
 		private Guna.UI2.WinForms.Guna2Panel loadChucNangSV;

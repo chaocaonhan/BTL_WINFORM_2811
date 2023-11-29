@@ -46,6 +46,8 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.cmbMaLop = new System.Windows.Forms.ComboBox();
 			this.cmbMaKhoa = new System.Windows.Forms.ComboBox();
+			this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.nhan = new BTL_QuanLiKTX.Nhan();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.dtpNgayKT = new System.Windows.Forms.DateTimePicker();
@@ -57,13 +59,11 @@
 			this.label12 = new System.Windows.Forms.Label();
 			this.btnThem = new System.Windows.Forms.Button();
 			this.errLoi = new System.Windows.Forms.ErrorProvider(this.components);
-			this.nhan = new BTL_QuanLiKTX.Nhan();
-			this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.khoaTableAdapter = new BTL_QuanLiKTX.NhanTableAdapters.KhoaTableAdapter();
 			this.guna2GroupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.errLoi)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.nhan)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.nhan)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.errLoi)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// btnHuy
@@ -71,10 +71,10 @@
 			this.btnHuy.BackColor = System.Drawing.Color.DarkSlateBlue;
 			this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnHuy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnHuy.Location = new System.Drawing.Point(579, 501);
+			this.btnHuy.Location = new System.Drawing.Point(689, 584);
 			this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnHuy.Name = "btnHuy";
-			this.btnHuy.Size = new System.Drawing.Size(171, 39);
+			this.btnHuy.Size = new System.Drawing.Size(202, 65);
 			this.btnHuy.TabIndex = 53;
 			this.btnHuy.Text = "Hủy";
 			this.btnHuy.UseVisualStyleBackColor = false;
@@ -111,17 +111,17 @@
 			this.guna2GroupBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.guna2GroupBox2.ForeColor = System.Drawing.Color.White;
 			this.guna2GroupBox2.Location = new System.Drawing.Point(39, 15);
-			this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.guna2GroupBox2.Margin = new System.Windows.Forms.Padding(4);
 			this.guna2GroupBox2.Name = "guna2GroupBox2";
-			this.guna2GroupBox2.Size = new System.Drawing.Size(991, 459);
+			this.guna2GroupBox2.Size = new System.Drawing.Size(1167, 507);
 			this.guna2GroupBox2.TabIndex = 51;
 			this.guna2GroupBox2.Text = "Thông Tin Trả Phòng Thuê";
 			// 
 			// txtToiDa
 			// 
 			this.txtToiDa.Enabled = false;
-			this.txtToiDa.Location = new System.Drawing.Point(715, 390);
-			this.txtToiDa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtToiDa.Location = new System.Drawing.Point(830, 423);
+			this.txtToiDa.Margin = new System.Windows.Forms.Padding(4);
 			this.txtToiDa.Name = "txtToiDa";
 			this.txtToiDa.Size = new System.Drawing.Size(256, 35);
 			this.txtToiDa.TabIndex = 55;
@@ -131,7 +131,7 @@
 			this.label14.AutoSize = true;
 			this.label14.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label14.ForeColor = System.Drawing.Color.Black;
-			this.label14.Location = new System.Drawing.Point(501, 394);
+			this.label14.Location = new System.Drawing.Point(616, 427);
 			this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(180, 26);
@@ -141,8 +141,8 @@
 			// txtDango
 			// 
 			this.txtDango.Enabled = false;
-			this.txtDango.Location = new System.Drawing.Point(715, 329);
-			this.txtDango.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtDango.Location = new System.Drawing.Point(830, 362);
+			this.txtDango.Margin = new System.Windows.Forms.Padding(4);
 			this.txtDango.Name = "txtDango";
 			this.txtDango.Size = new System.Drawing.Size(256, 35);
 			this.txtDango.TabIndex = 53;
@@ -152,7 +152,7 @@
 			this.label13.AutoSize = true;
 			this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label13.ForeColor = System.Drawing.Color.Black;
-			this.label13.Location = new System.Drawing.Point(501, 332);
+			this.label13.Location = new System.Drawing.Point(616, 365);
 			this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(191, 26);
@@ -162,8 +162,8 @@
 			// txtTienThue
 			// 
 			this.txtTienThue.Enabled = false;
-			this.txtTienThue.Location = new System.Drawing.Point(187, 390);
-			this.txtTienThue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtTienThue.Location = new System.Drawing.Point(246, 427);
+			this.txtTienThue.Margin = new System.Windows.Forms.Padding(4);
 			this.txtTienThue.Name = "txtTienThue";
 			this.txtTienThue.Size = new System.Drawing.Size(289, 35);
 			this.txtTienThue.TabIndex = 51;
@@ -173,7 +173,7 @@
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.ForeColor = System.Drawing.Color.Black;
-			this.label2.Location = new System.Drawing.Point(7, 394);
+			this.label2.Location = new System.Drawing.Point(66, 431);
 			this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(123, 26);
@@ -183,8 +183,8 @@
 			// txtMaPhong
 			// 
 			this.txtMaPhong.Enabled = false;
-			this.txtMaPhong.Location = new System.Drawing.Point(681, 138);
-			this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtMaPhong.Location = new System.Drawing.Point(796, 171);
+			this.txtMaPhong.Margin = new System.Windows.Forms.Padding(4);
 			this.txtMaPhong.Name = "txtMaPhong";
 			this.txtMaPhong.Size = new System.Drawing.Size(289, 35);
 			this.txtMaPhong.TabIndex = 49;
@@ -192,8 +192,8 @@
 			// dtpNgayTra
 			// 
 			this.dtpNgayTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpNgayTra.Location = new System.Drawing.Point(211, 262);
-			this.dtpNgayTra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dtpNgayTra.Location = new System.Drawing.Point(270, 299);
+			this.dtpNgayTra.Margin = new System.Windows.Forms.Padding(4);
 			this.dtpNgayTra.Name = "dtpNgayTra";
 			this.dtpNgayTra.Size = new System.Drawing.Size(265, 35);
 			this.dtpNgayTra.TabIndex = 48;
@@ -204,7 +204,7 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label1.ForeColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(7, 268);
+			this.label1.Location = new System.Drawing.Point(66, 305);
 			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(185, 26);
@@ -214,8 +214,8 @@
 			// txtTienViPham
 			// 
 			this.txtTienViPham.Enabled = false;
-			this.txtTienViPham.Location = new System.Drawing.Point(187, 329);
-			this.txtTienViPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtTienViPham.Location = new System.Drawing.Point(246, 366);
+			this.txtTienViPham.Margin = new System.Windows.Forms.Padding(4);
 			this.txtTienViPham.Name = "txtTienViPham";
 			this.txtTienViPham.Size = new System.Drawing.Size(289, 35);
 			this.txtTienViPham.TabIndex = 41;
@@ -225,7 +225,7 @@
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label9.ForeColor = System.Drawing.Color.Black;
-			this.label9.Location = new System.Drawing.Point(7, 332);
+			this.label9.Location = new System.Drawing.Point(66, 369);
 			this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(159, 26);
@@ -235,8 +235,8 @@
 			// cmbMaSV
 			// 
 			this.cmbMaSV.FormattingEnabled = true;
-			this.cmbMaSV.Location = new System.Drawing.Point(181, 202);
-			this.cmbMaSV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbMaSV.Location = new System.Drawing.Point(240, 239);
+			this.cmbMaSV.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbMaSV.Name = "cmbMaSV";
 			this.cmbMaSV.Size = new System.Drawing.Size(295, 34);
 			this.cmbMaSV.TabIndex = 37;
@@ -247,7 +247,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label4.ForeColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(7, 212);
+			this.label4.Location = new System.Drawing.Point(66, 249);
 			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(157, 26);
@@ -257,8 +257,8 @@
 			// cmbMaLop
 			// 
 			this.cmbMaLop.FormattingEnabled = true;
-			this.cmbMaLop.Location = new System.Drawing.Point(179, 134);
-			this.cmbMaLop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbMaLop.Location = new System.Drawing.Point(238, 171);
+			this.cmbMaLop.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbMaLop.Name = "cmbMaLop";
 			this.cmbMaLop.Size = new System.Drawing.Size(297, 34);
 			this.cmbMaLop.TabIndex = 35;
@@ -269,19 +269,29 @@
 			this.cmbMaKhoa.DataSource = this.khoaBindingSource;
 			this.cmbMaKhoa.DisplayMember = "Makhoa";
 			this.cmbMaKhoa.FormattingEnabled = true;
-			this.cmbMaKhoa.Location = new System.Drawing.Point(179, 70);
-			this.cmbMaKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.cmbMaKhoa.Location = new System.Drawing.Point(238, 107);
+			this.cmbMaKhoa.Margin = new System.Windows.Forms.Padding(4);
 			this.cmbMaKhoa.Name = "cmbMaKhoa";
 			this.cmbMaKhoa.Size = new System.Drawing.Size(297, 34);
 			this.cmbMaKhoa.TabIndex = 34;
 			this.cmbMaKhoa.SelectedIndexChanged += new System.EventHandler(this.cmbMaKhoa_SelectedIndexChanged);
+			// 
+			// khoaBindingSource
+			// 
+			this.khoaBindingSource.DataMember = "Khoa";
+			this.khoaBindingSource.DataSource = this.nhan;
+			// 
+			// nhan
+			// 
+			this.nhan.DataSetName = "Nhan";
+			this.nhan.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
 			// 
 			// label7
 			// 
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label7.ForeColor = System.Drawing.Color.Black;
-			this.label7.Location = new System.Drawing.Point(4, 80);
+			this.label7.Location = new System.Drawing.Point(63, 117);
 			this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(117, 26);
@@ -293,7 +303,7 @@
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label6.ForeColor = System.Drawing.Color.Black;
-			this.label6.Location = new System.Drawing.Point(4, 144);
+			this.label6.Location = new System.Drawing.Point(63, 181);
 			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(100, 26);
@@ -304,8 +314,8 @@
 			// 
 			this.dtpNgayKT.Enabled = false;
 			this.dtpNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpNgayKT.Location = new System.Drawing.Point(681, 263);
-			this.dtpNgayKT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dtpNgayKT.Location = new System.Drawing.Point(796, 296);
+			this.dtpNgayKT.Margin = new System.Windows.Forms.Padding(4);
 			this.dtpNgayKT.Name = "dtpNgayKT";
 			this.dtpNgayKT.Size = new System.Drawing.Size(289, 35);
 			this.dtpNgayKT.TabIndex = 15;
@@ -313,8 +323,8 @@
 			// txtMathue
 			// 
 			this.txtMathue.Enabled = false;
-			this.txtMathue.Location = new System.Drawing.Point(681, 71);
-			this.txtMathue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.txtMathue.Location = new System.Drawing.Point(796, 104);
+			this.txtMathue.Margin = new System.Windows.Forms.Padding(4);
 			this.txtMathue.Name = "txtMathue";
 			this.txtMathue.Size = new System.Drawing.Size(289, 35);
 			this.txtMathue.TabIndex = 14;
@@ -323,8 +333,8 @@
 			// 
 			this.dtpNgayBĐ.Enabled = false;
 			this.dtpNgayBĐ.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-			this.dtpNgayBĐ.Location = new System.Drawing.Point(681, 199);
-			this.dtpNgayBĐ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.dtpNgayBĐ.Location = new System.Drawing.Point(796, 232);
+			this.dtpNgayBĐ.Margin = new System.Windows.Forms.Padding(4);
 			this.dtpNgayBĐ.Name = "dtpNgayBĐ";
 			this.dtpNgayBĐ.Size = new System.Drawing.Size(289, 35);
 			this.dtpNgayBĐ.TabIndex = 12;
@@ -334,7 +344,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label8.ForeColor = System.Drawing.Color.Black;
-			this.label8.Location = new System.Drawing.Point(501, 270);
+			this.label8.Location = new System.Drawing.Point(616, 303);
 			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(168, 26);
@@ -346,7 +356,7 @@
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label10.ForeColor = System.Drawing.Color.Black;
-			this.label10.Location = new System.Drawing.Point(501, 142);
+			this.label10.Location = new System.Drawing.Point(616, 175);
 			this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(130, 26);
@@ -358,7 +368,7 @@
 			this.label11.AutoSize = true;
 			this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label11.ForeColor = System.Drawing.Color.Black;
-			this.label11.Location = new System.Drawing.Point(501, 80);
+			this.label11.Location = new System.Drawing.Point(616, 113);
 			this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(139, 26);
@@ -370,7 +380,7 @@
 			this.label12.AutoSize = true;
 			this.label12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label12.ForeColor = System.Drawing.Color.Black;
-			this.label12.Location = new System.Drawing.Point(501, 206);
+			this.label12.Location = new System.Drawing.Point(616, 239);
 			this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(162, 26);
@@ -382,10 +392,10 @@
 			this.btnThem.BackColor = System.Drawing.Color.DarkSlateBlue;
 			this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.btnThem.Location = new System.Drawing.Point(345, 501);
+			this.btnThem.Location = new System.Drawing.Point(354, 584);
 			this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
 			this.btnThem.Name = "btnThem";
-			this.btnThem.Size = new System.Drawing.Size(171, 39);
+			this.btnThem.Size = new System.Drawing.Size(197, 65);
 			this.btnThem.TabIndex = 52;
 			this.btnThem.Text = "Đăng kí ";
 			this.btnThem.UseVisualStyleBackColor = false;
@@ -395,16 +405,6 @@
 			// 
 			this.errLoi.ContainerControl = this;
 			// 
-			// nhan
-			// 
-			this.nhan.DataSetName = "Nhan";
-			this.nhan.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			// 
-			// khoaBindingSource
-			// 
-			this.khoaBindingSource.DataMember = "Khoa";
-			this.khoaBindingSource.DataSource = this.nhan;
-			// 
 			// khoaTableAdapter
 			// 
 			this.khoaTableAdapter.ClearBeforeFill = true;
@@ -413,20 +413,20 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1067, 554);
+			this.ClientSize = new System.Drawing.Size(1261, 684);
 			this.Controls.Add(this.btnHuy);
 			this.Controls.Add(this.guna2GroupBox2);
 			this.Controls.Add(this.btnThem);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FormSVTraPhong";
 			this.Text = "FormSVTraPhong";
 			this.Load += new System.EventHandler(this.FormSVTraPhong_Load);
 			this.guna2GroupBox2.ResumeLayout(false);
 			this.guna2GroupBox2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.errLoi)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.nhan)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.nhan)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.errLoi)).EndInit();
 			this.ResumeLayout(false);
 
 		}

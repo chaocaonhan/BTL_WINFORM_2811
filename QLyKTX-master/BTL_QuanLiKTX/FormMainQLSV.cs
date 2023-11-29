@@ -40,23 +40,28 @@ namespace BTL_QuanLiKTX
 		private void tìmKiếmSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			loadFunction(new FormTimKiem());
+			lbChucNangHienTai.Text = "Tìm kiếm sinh viên";
 		}
 
 		private void thêmToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			loadFunction(new FormThemSinhVien());
+			lbChucNangHienTai.Text = "Thêm sinh viên";
 		}
 		private void sửaToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			loadFunction(new FormEditSV());
+			lbChucNangHienTai.Text = "Sửa thông tin sinh viên";
 		}
 		private void sinhViênĐặtPhòngToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			loadFunction(new FormSVDatPhong());
+			lbChucNangHienTai.Text = "Sinh viên đặt phòng ";
 		}
 		private void sinhViênTrảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			loadFunction(new FormSVTraPhong());
+			lbChucNangHienTai.Text = "Sinh viên trả phòng";
 		}
 		private void xuấtExcelToolStripMenuItem_Click(object sender, EventArgs e)
 		{

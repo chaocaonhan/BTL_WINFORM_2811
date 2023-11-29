@@ -175,3 +175,4 @@ C:\Users\ccnha\OneDrive\Desktop\BTL\QLyKTX-master\BTL_QuanLiKTX\bin\Debug\EPPlus
 C:\Users\ccnha\OneDrive\Desktop\BTL\QLyKTX-master\BTL_QuanLiKTX\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
 C:\Users\ccnha\OneDrive\Desktop\BTL\QLyKTX-master\BTL_QuanLiKTX\bin\Debug\System.IO.Packaging.xml
 C:\Users\ccnha\OneDrive\Desktop\BTL\QLyKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.FormQuanLiThietBi.resources
+C:\Users\ccnha\OneDrive\Desktop\BTL\QLyKTX-master\BTL_QuanLiKTX\obj\Debug\BTL_QuanLiKTX.ChiTietPhong.resources

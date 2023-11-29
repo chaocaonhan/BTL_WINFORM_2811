@@ -34,7 +34,6 @@
 			this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
 			this.picUTCLogo = new System.Windows.Forms.PictureBox();
 			this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
-			this.btnThongKe = new Guna.UI2.WinForms.Guna2Button();
 			this.btnQuanLiThietBi = new Guna.UI2.WinForms.Guna2Button();
 			this.btnQuanLiHoaDon = new Guna.UI2.WinForms.Guna2Button();
 			this.btnQuanLiSV = new Guna.UI2.WinForms.Guna2Button();
@@ -45,17 +44,17 @@
 			this.loadContent = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
+			this.lbCountSinhVien = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
+			this.lbCountPhong = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label4 = new System.Windows.Forms.Label();
+			this.lbCountHoaDon = new System.Windows.Forms.Label();
 			this.panel5 = new System.Windows.Forms.Panel();
 			this.label6 = new System.Windows.Forms.Label();
-			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-			this.lbCountPhong = new System.Windows.Forms.Label();
-			this.lbCountSinhVien = new System.Windows.Forms.Label();
 			this.lbCountThietBi = new System.Windows.Forms.Label();
-			this.lbCountHoaDon = new System.Windows.Forms.Label();
+			this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
 			this.guna2Panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.btnCloseForm)).BeginInit();
 			this.guna2GradientPanel1.SuspendLayout();
@@ -82,7 +81,7 @@
 			// btnCloseForm
 			// 
 			this.btnCloseForm.Image = global::BTL_QuanLiKTX.Properties.Resources.close;
-			this.btnCloseForm.Location = new System.Drawing.Point(1511, 6);
+			this.btnCloseForm.Location = new System.Drawing.Point(1509, 4);
 			this.btnCloseForm.Name = "btnCloseForm";
 			this.btnCloseForm.Size = new System.Drawing.Size(35, 32);
 			this.btnCloseForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,7 +94,6 @@
 			this.guna2GradientPanel1.BackColor = System.Drawing.Color.SlateBlue;
 			this.guna2GradientPanel1.Controls.Add(this.picUTCLogo);
 			this.guna2GradientPanel1.Controls.Add(this.btnLogout);
-			this.guna2GradientPanel1.Controls.Add(this.btnThongKe);
 			this.guna2GradientPanel1.Controls.Add(this.btnQuanLiThietBi);
 			this.guna2GradientPanel1.Controls.Add(this.btnQuanLiHoaDon);
 			this.guna2GradientPanel1.Controls.Add(this.btnQuanLiSV);
@@ -131,34 +129,12 @@
 			this.btnLogout.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnLogout.ForeColor = System.Drawing.Color.White;
 			this.btnLogout.Image = global::BTL_QuanLiKTX.Properties.Resources.logout;
-			this.btnLogout.ImageOffset = new System.Drawing.Point(-16, 0);
 			this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
 			this.btnLogout.Location = new System.Drawing.Point(5, 665);
 			this.btnLogout.Name = "btnLogout";
 			this.btnLogout.Size = new System.Drawing.Size(304, 72);
 			this.btnLogout.TabIndex = 6;
-			this.btnLogout.Text = "Logout";
-			this.btnLogout.TextOffset = new System.Drawing.Point(-7, 0);
-			// 
-			// btnThongKe
-			// 
-			this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-			this.btnThongKe.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.btnThongKe.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.btnThongKe.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.btnThongKe.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.btnThongKe.FillColor = System.Drawing.Color.Transparent;
-			this.btnThongKe.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnThongKe.ForeColor = System.Drawing.Color.White;
-			this.btnThongKe.Image = global::BTL_QuanLiKTX.Properties.Resources.report1;
-			this.btnThongKe.ImageOffset = new System.Drawing.Point(-21, 0);
-			this.btnThongKe.ImageSize = new System.Drawing.Size(40, 40);
-			this.btnThongKe.Location = new System.Drawing.Point(2, 561);
-			this.btnThongKe.Name = "btnThongKe";
-			this.btnThongKe.Size = new System.Drawing.Size(307, 66);
-			this.btnThongKe.TabIndex = 6;
-			this.btnThongKe.Text = "Thống kê";
-			this.btnThongKe.TextOffset = new System.Drawing.Point(5, 0);
+			this.btnLogout.Text = "      Logout";
 			// 
 			// btnQuanLiThietBi
 			// 
@@ -171,9 +147,9 @@
 			this.btnQuanLiThietBi.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnQuanLiThietBi.ForeColor = System.Drawing.Color.White;
 			this.btnQuanLiThietBi.Image = global::BTL_QuanLiKTX.Properties.Resources.infrastructure1;
-			this.btnQuanLiThietBi.ImageOffset = new System.Drawing.Point(-25, 0);
+			this.btnQuanLiThietBi.ImageOffset = new System.Drawing.Point(-5, 0);
 			this.btnQuanLiThietBi.ImageSize = new System.Drawing.Size(40, 40);
-			this.btnQuanLiThietBi.Location = new System.Drawing.Point(2, 494);
+			this.btnQuanLiThietBi.Location = new System.Drawing.Point(-1, 526);
 			this.btnQuanLiThietBi.Name = "btnQuanLiThietBi";
 			this.btnQuanLiThietBi.Size = new System.Drawing.Size(307, 61);
 			this.btnQuanLiThietBi.TabIndex = 6;
@@ -192,9 +168,9 @@
 			this.btnQuanLiHoaDon.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnQuanLiHoaDon.ForeColor = System.Drawing.Color.White;
 			this.btnQuanLiHoaDon.Image = global::BTL_QuanLiKTX.Properties.Resources.money1;
-			this.btnQuanLiHoaDon.ImageOffset = new System.Drawing.Point(-22, 0);
+			this.btnQuanLiHoaDon.ImageOffset = new System.Drawing.Point(-5, 0);
 			this.btnQuanLiHoaDon.ImageSize = new System.Drawing.Size(40, 40);
-			this.btnQuanLiHoaDon.Location = new System.Drawing.Point(5, 423);
+			this.btnQuanLiHoaDon.Location = new System.Drawing.Point(5, 432);
 			this.btnQuanLiHoaDon.Name = "btnQuanLiHoaDon";
 			this.btnQuanLiHoaDon.Size = new System.Drawing.Size(307, 56);
 			this.btnQuanLiHoaDon.TabIndex = 6;
@@ -213,13 +189,12 @@
 			this.btnQuanLiSV.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnQuanLiSV.ForeColor = System.Drawing.Color.White;
 			this.btnQuanLiSV.Image = global::BTL_QuanLiKTX.Properties.Resources.resume;
-			this.btnQuanLiSV.ImageOffset = new System.Drawing.Point(-20, 0);
 			this.btnQuanLiSV.ImageSize = new System.Drawing.Size(40, 40);
-			this.btnQuanLiSV.Location = new System.Drawing.Point(3, 358);
+			this.btnQuanLiSV.Location = new System.Drawing.Point(3, 347);
 			this.btnQuanLiSV.Name = "btnQuanLiSV";
 			this.btnQuanLiSV.Size = new System.Drawing.Size(307, 50);
 			this.btnQuanLiSV.TabIndex = 6;
-			this.btnQuanLiSV.Text = "Sinh viên";
+			this.btnQuanLiSV.Text = "  Sinh viên";
 			this.btnQuanLiSV.TextOffset = new System.Drawing.Point(5, 0);
 			this.btnQuanLiSV.Click += new System.EventHandler(this.btnQuanLiSV_Click);
 			// 
@@ -234,9 +209,9 @@
 			this.btnQanLiPhong.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnQanLiPhong.ForeColor = System.Drawing.Color.White;
 			this.btnQanLiPhong.Image = global::BTL_QuanLiKTX.Properties.Resources.home;
-			this.btnQanLiPhong.ImageOffset = new System.Drawing.Point(-30, 0);
+			this.btnQanLiPhong.ImageOffset = new System.Drawing.Point(-10, 0);
 			this.btnQanLiPhong.ImageSize = new System.Drawing.Size(40, 40);
-			this.btnQanLiPhong.Location = new System.Drawing.Point(2, 285);
+			this.btnQanLiPhong.Location = new System.Drawing.Point(3, 254);
 			this.btnQanLiPhong.Name = "btnQanLiPhong";
 			this.btnQanLiPhong.Size = new System.Drawing.Size(307, 53);
 			this.btnQanLiPhong.TabIndex = 6;
@@ -307,6 +282,17 @@
 			this.label2.Text = "Sinh Viên";
 			this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
 			// 
+			// lbCountSinhVien
+			// 
+			this.lbCountSinhVien.AutoSize = true;
+			this.lbCountSinhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbCountSinhVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lbCountSinhVien.Location = new System.Drawing.Point(472, 218);
+			this.lbCountSinhVien.Name = "lbCountSinhVien";
+			this.lbCountSinhVien.Size = new System.Drawing.Size(64, 69);
+			this.lbCountSinhVien.TabIndex = 1;
+			this.lbCountSinhVien.Text = "1";
+			// 
 			// panel3
 			// 
 			this.panel3.BackColor = System.Drawing.Color.SteelBlue;
@@ -328,6 +314,17 @@
 			this.label5.Size = new System.Drawing.Size(97, 32);
 			this.label5.TabIndex = 0;
 			this.label5.Text = "Phòng";
+			// 
+			// lbCountPhong
+			// 
+			this.lbCountPhong.AutoSize = true;
+			this.lbCountPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbCountPhong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lbCountPhong.Location = new System.Drawing.Point(494, 202);
+			this.lbCountPhong.Name = "lbCountPhong";
+			this.lbCountPhong.Size = new System.Drawing.Size(64, 69);
+			this.lbCountPhong.TabIndex = 1;
+			this.lbCountPhong.Text = "1";
 			// 
 			// panel2
 			// 
@@ -351,6 +348,17 @@
 			this.label4.TabIndex = 0;
 			this.label4.Text = "Hóa đơn";
 			// 
+			// lbCountHoaDon
+			// 
+			this.lbCountHoaDon.AutoSize = true;
+			this.lbCountHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbCountHoaDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lbCountHoaDon.Location = new System.Drawing.Point(472, 202);
+			this.lbCountHoaDon.Name = "lbCountHoaDon";
+			this.lbCountHoaDon.Size = new System.Drawing.Size(64, 69);
+			this.lbCountHoaDon.TabIndex = 1;
+			this.lbCountHoaDon.Text = "1";
+			// 
 			// panel5
 			// 
 			this.panel5.BackColor = System.Drawing.Color.LightSteelBlue;
@@ -373,6 +381,17 @@
 			this.label6.TabIndex = 0;
 			this.label6.Text = "Thiết bị";
 			// 
+			// lbCountThietBi
+			// 
+			this.lbCountThietBi.AutoSize = true;
+			this.lbCountThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbCountThietBi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.lbCountThietBi.Location = new System.Drawing.Point(494, 202);
+			this.lbCountThietBi.Name = "lbCountThietBi";
+			this.lbCountThietBi.Size = new System.Drawing.Size(64, 69);
+			this.lbCountThietBi.TabIndex = 1;
+			this.lbCountThietBi.Text = "1";
+			// 
 			// tableLayoutPanel1
 			// 
 			this.tableLayoutPanel1.ColumnCount = 2;
@@ -390,50 +409,6 @@
 			this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.tableLayoutPanel1.Size = new System.Drawing.Size(1288, 698);
 			this.tableLayoutPanel1.TabIndex = 0;
-			// 
-			// lbCountPhong
-			// 
-			this.lbCountPhong.AutoSize = true;
-			this.lbCountPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbCountPhong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.lbCountPhong.Location = new System.Drawing.Point(494, 202);
-			this.lbCountPhong.Name = "lbCountPhong";
-			this.lbCountPhong.Size = new System.Drawing.Size(64, 69);
-			this.lbCountPhong.TabIndex = 1;
-			this.lbCountPhong.Text = "1";
-			// 
-			// lbCountSinhVien
-			// 
-			this.lbCountSinhVien.AutoSize = true;
-			this.lbCountSinhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbCountSinhVien.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.lbCountSinhVien.Location = new System.Drawing.Point(472, 218);
-			this.lbCountSinhVien.Name = "lbCountSinhVien";
-			this.lbCountSinhVien.Size = new System.Drawing.Size(64, 69);
-			this.lbCountSinhVien.TabIndex = 1;
-			this.lbCountSinhVien.Text = "1";
-			// 
-			// lbCountThietBi
-			// 
-			this.lbCountThietBi.AutoSize = true;
-			this.lbCountThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbCountThietBi.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.lbCountThietBi.Location = new System.Drawing.Point(494, 202);
-			this.lbCountThietBi.Name = "lbCountThietBi";
-			this.lbCountThietBi.Size = new System.Drawing.Size(64, 69);
-			this.lbCountThietBi.TabIndex = 1;
-			this.lbCountThietBi.Text = "1";
-			// 
-			// lbCountHoaDon
-			// 
-			this.lbCountHoaDon.AutoSize = true;
-			this.lbCountHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbCountHoaDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.lbCountHoaDon.Location = new System.Drawing.Point(472, 202);
-			this.lbCountHoaDon.Name = "lbCountHoaDon";
-			this.lbCountHoaDon.Size = new System.Drawing.Size(64, 69);
-			this.lbCountHoaDon.TabIndex = 1;
-			this.lbCountHoaDon.Text = "1";
 			// 
 			// FormTrangChu
 			// 
@@ -477,7 +452,6 @@
 		private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
 		private System.Windows.Forms.PictureBox picUTCLogo;
 		private Guna.UI2.WinForms.Guna2Button btnLogout;
-		private Guna.UI2.WinForms.Guna2Button btnThongKe;
 		private Guna.UI2.WinForms.Guna2Button btnQuanLiThietBi;
 		private Guna.UI2.WinForms.Guna2Button btnQuanLiHoaDon;
 		private Guna.UI2.WinForms.Guna2Button btnQuanLiSV;
@@ -488,16 +462,16 @@
 		private System.Windows.Forms.Panel loadContent;
 		private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
 		private System.Windows.Forms.Panel panel5;
+		private System.Windows.Forms.Label lbCountThietBi;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Label lbCountHoaDon;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Label lbCountPhong;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Label lbCountPhong;
-		private System.Windows.Forms.Label lbCountThietBi;
-		private System.Windows.Forms.Label lbCountHoaDon;
 		private System.Windows.Forms.Label lbCountSinhVien;
+		private System.Windows.Forms.Label label2;
 	}
 }

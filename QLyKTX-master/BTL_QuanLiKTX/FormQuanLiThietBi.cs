@@ -47,8 +47,6 @@ namespace BTL_QuanLiKTX
         }
         private void FormQuanLiThietBi_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'nhan.Thietbi' table. You can move, or remove it, as needed.
-            this.thietbiTableAdapter.Fill(this.nhan.Thietbi);
             dgvQLTB.DataSource = dtBase.DocBang("SELECT dbo.ThietBiPhong.*,dbo.Thietbi.Tenthietbi,dbo.Thietbi.Giatri FROM dbo.ThietBiPhong join dbo.Thietbi on dbo.ThietBiPhong.Mathietbi = dbo.Thietbi.Mathietbi");
             changeColumnsName();
             cbbTinhTrang.Items.Add("Đang sử dụng");
